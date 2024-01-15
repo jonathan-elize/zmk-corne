@@ -17,7 +17,7 @@
 &none &kp Q      &kp W      &kp E       &kp R       &kp T   &kp Y &kp U       &kp I       &kp O      &kp P        &none
 &none &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G   &kp H &mt LSHFT J &mt LCTRL K &mt LALT L &mt LGUI SQT &none
 &none &kp Z      &kp X      &kp C       &kp V       &kp B   &kp N &kp M       &kp COMMA   &kp DOT    &kp FSLH     &none
-&mt 6 ESC &mt 4 SPACE &mt 5 TAB                          &mt 2 RET &mt 1 BACKSPACE &mt 3 DELETE
+&lt 6 ESC &lt 4 SPACE &lt 5 TAB                          &lt 2 RET &lt 1 BACKSPACE &lt 3 DELETE
                         >;
                 };
 
