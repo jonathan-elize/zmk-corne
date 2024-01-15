@@ -14,12 +14,12 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <37 38>;
             bindings = <&lt 6 ESC>;
         };
         combo_delete {
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <39 40>;
             bindings = <&lt 3 DELETE>;
         };
     };
