@@ -52,7 +52,7 @@
                 nav_layer {
                         bindings = <
 &none &none &none &none &none &none                 &none &none &none &none &none                   &none
-&none &kp LGUI &kp RALT &kp LCTRL &kp LSHFT &none   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPS &none
+&none &kp LGUI &kp RALT &kp LCTRL &kp LSHFT &none   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
 &none &none &none &none &none &none                 &kp HOME &kp PG_DN &kp PG_UP &kp END   &none    &none
 &none  &kp RET  &none                               &kp RET  &kp DELETE  &kp BACKSPACE
                         >;
