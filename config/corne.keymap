@@ -41,9 +41,9 @@
 
                 fun_layer {
                         bindings = <
-&kp F12 &kp F07 &kp F08 &kp F09 &kp N1      &trans &trans &trans &trans &trans
-&kp F11 &kp F04 &kp F05 &kp F06 &kp N1   &trans &kp LSHFT &kp LCTRL &kp RALT &kp LGUI
-&kp F10 &kp F01 &kp F02 &kp F03 &kp N1     &trans &trans &trans &trans &trans
+&kp F12 &kp F7 &kp F8 &kp F9 &kp N1   &trans &trans &trans &trans &trans
+&kp F11 &kp F4 &kp F5 &kp F6 &kp N1   &trans &kp LSHFT &kp LCTRL &kp RALT &kp LGUI
+&kp F10 &kp F1 &kp F2 &kp F3 &kp N1   &trans &trans &trans &trans &trans
         &kp CARET    &kp SPACE &kp TAB      &trans &trans &kp RET  
                         >;
                 };
