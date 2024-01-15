@@ -33,7 +33,7 @@
                 sym_layer {
                         bindings = <
 &kp LBRC  &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RBRC   &trans &trans &trans &trans &trans
-&kp COLON &kp DLLR &kp PRCNT       &kp CARET &kp PLUS   &trans &kp SHIFT &kpCTRL &kp ALT &kp LGUI
+&kp COLON &kp DLLR &kp PRCNT       &kp CARET &kp PLUS   &trans &kp LSHFT &kp LCTRL &kp RALT &kp LGUI 
 &kp TILDE &kp EXCL &kp AT          &kp HASH  &kp PIPE   &trans &trans &trans &trans &trans
         &kp LPAR &kp RPAR &kp UNDER                     &kp RET &trans &trans
                         >;
@@ -42,7 +42,7 @@
                 fun_layer {
                         bindings = <
 &kp F12 &kp F07 &kp F08 &kp F09 &kp PR      &trans &trans &trans &trans &trans
-&kp F11 &kp F04 &kp F05 &kp F06 &kp SCROL   &trans &kp SHIFT &kpCTRL &kp ALT &kp LGUI
+&kp F11 &kp F04 &kp F05 &kp F06 &kp SCROL   &trans &kp LSHFT &kp LCTRL &kp RALT &kp LGUI
 &kp F10 &kp F01 &kp F02 &kp F03 &kp PBR     &trans &trans &trans &trans &trans
         &kp CARET    &kp SPACE &kp TAB      &trans &trans &kp RET  
                         >;
