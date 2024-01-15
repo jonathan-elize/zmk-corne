@@ -44,34 +44,34 @@
 &kp F12 &kp F7 &kp F8 &kp F9 &kp N1   &trans &trans &trans &trans &trans
 &kp F11 &kp F4 &kp F5 &kp F6 &kp N1   &trans &kp LSHFT &kp LCTRL &kp RALT &kp LGUI
 &kp F10 &kp F1 &kp F2 &kp F3 &kp N1   &trans &trans &trans &trans &trans
-        &kp CARET    &kp SPACE &kp TAB      &trans &trans &kp RET  
+        &kp CARET    &kp SPACE &kp TAB       &trans &trans &kp RET  
                         >;
                 };
 
                 nav_layer {
                         bindings = <
-&trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-&LGUI &kp RALT &kp LCTRL &kp LSHFT &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp CAPS
-&trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-&trans  &kp RET  &trans                       &kp RET  &kp DELETE  &kp BACKSPACE
+&trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+&kp LGUI &kp RALT &kp LCTRL &kp LSHFT &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp CAPS
+&trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+&trans  &kp RET  &trans                        &kp RET  &kp DELETE  &kp BACKSPACE
                         >;
                 };
 
                 mouse_layer {
                         bindings = <
-&trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-&LGUI &kp RALT &kp LCTRL &kp LSHFT &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-&trans  &trans  &kp RET                       &kp RET  &kp DELETE  &kp BACKSPACE
+&trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+&kp LGUI &kp RALT &kp LCTRL &kp LSHFT &trans   &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+&trans  &trans  &kp RET                        &kp RET  &kp DELETE  &kp BACKSPACE
                         >;
                 };
 
                 media_layer {
                         bindings = <
-&trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-&LGUI &kp RALT &kp LCTRL &kp LSHFT &trans   &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-&kp RET  &trans  &trans                       &kp RET  &kp DELETE  &kp BACKSPACE
+&trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+&kp LGUI &kp RALT &kp LCTRL &kp LSHFT &trans   &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans
+&kp RET  &trans  &trans                        &kp RET  &kp DELETE  &kp BACKSPACE
                         >;
                 };
         };
