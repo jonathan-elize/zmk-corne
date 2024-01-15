@@ -10,6 +10,22 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&lt 6 ESC>;
+        };
+        combo_delete {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&lt 3 DELETE>;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
