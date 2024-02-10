@@ -61,6 +61,7 @@
             bindings = <&bt BT_SEL 4>, <&bt BT_DISC 4>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        // https://www.reddit.com/r/olkb/comments/zdzwoh/how_to_do_modtap_in_zmk_except_for_one_thing/
         hm: homerow-mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
