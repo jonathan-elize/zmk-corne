@@ -61,6 +61,12 @@
             bindings = <&bt BT_SEL 4>, <&bt BT_DISC 4>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        caps_word_lock: caps_word_lock {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&kp CAPSLOCK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         // https://www.reddit.com/r/olkb/comments/zdzwoh/how_to_do_modtap_in_zmk_except_for_one_thing/
         hm: homerow-mods {
             compatible = "zmk,behavior-hold-tap";
@@ -123,7 +129,7 @@
                   label = "Nav";
                         bindings = <
 &none &none &none &none &none &none                 &none &none &none &none &none                   &none
-&none &kp LGUI &kp RALT &kp LCTRL &kp LSHFT &none   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word &none
+&none &kp LGUI &kp RALT &kp LCTRL &kp LSHFT &none   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &caps_word_lock &none
 &none &none &none &none &none &none                 &kp HOME &kp PG_DN &kp PG_UP &kp END   &none    &none
 &none  &kp RET  &none                               &kp RET  &kp DELETE  &kp BACKSPACE
                         >;
