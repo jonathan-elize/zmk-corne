@@ -15,7 +15,8 @@
 #     shield: corne_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
-#
+# Reference for building multiple diff config keyboards:
+#   https://github.com/zmkfirmware/zmk/issues/1931
 ---
 include:
   - board: nice_nano_v2
