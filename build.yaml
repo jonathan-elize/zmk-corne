@@ -28,9 +28,9 @@ include:
     shield: settings_reset
   - board: nice_nano_v2
     shield: corne_left
-    cmake-args: '-DCONFIG_ZMK_KEYBOARD_NAME="noir"'
+    cmake-args: -DEXTRA_CONF_FILE=../../config/corne-noir.keymap
     artifact-name: noir_corne_left
   - board: nice_nano_v2
     shield: corne_right
-    cmake-args: '-DCONFIG_ZMK_KEYBOARD_NAME="noir"'
+    cmake-args: -DEXTRA_CONF_FILE=../../config/corne-noir.keymap
     artifact-name: noir_corne_right
