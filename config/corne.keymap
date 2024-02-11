@@ -104,8 +104,8 @@
     };
 };
 
-# define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000
-# define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
+# define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500
+# define ZMK_MOUSE_DEFAULT_SCRL_VAL 30
 
 &mmv {
   acceleration-exponent = <1>;
