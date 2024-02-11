@@ -95,10 +95,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <125>;
-            global-quick-tap;
+            tapping-term-ms = <175>; // how long before a hold is registered
+            flavor = "tap-preferred"; // ONLY activate hold after tapping-term-ms has passed, else always a tap
+            quick-tap-ms = <125>; // if a tap was triggered on a hold-tap this many seconds before, then the tap is always gonna be triggered in the next tap-hold key
             bindings = <&kp>, <&kp>; 
         };
     };
