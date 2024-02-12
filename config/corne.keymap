@@ -117,36 +117,6 @@
             bindings = <&caps_word>, <&kp CAPSLOCK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        rgb_toggle: rgb_toggle {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_ON>, <&rgb_ug RGB_OFF>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        rgb_eff_move: rgb_eff_move {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        rgb_hue_move: rgb_hue_move {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        rgb_bri_move: rgb_bri_move {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        rgb_sat_move: rgb_sat_move {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         // https://www.reddit.com/r/olkb/comments/zdzwoh/how_to_do_modtap_in_zmk_except_for_one_thing/
         hm: homerow-mods {
             compatible = "zmk,behavior-hold-tap";
