@@ -26,11 +26,3 @@ include:
     artifact-name: mawon_corne_right
   - board: nice_nano_v2
     shield: settings_reset
-  - board: nice_nano_v2
-    shield: corne_left
-    cmake-args: -DEXTRA_CONF_FILE=../../config/corne-noir.conf
-    artifact-name: noir_corne_left
-  - board: nice_nano_v2
-    shield: corne_right
-    cmake-args: -DEXTRA_CONF_FILE=../../config/corne-noir.conf
-    artifact-name: noir_corne_right
