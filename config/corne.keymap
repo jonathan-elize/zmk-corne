@@ -145,6 +145,10 @@
   delay-ms = <0>;
 };
 
+&lt {
+  quick-tap-ms = <150>;
+}
+
 // keyboard drawings format: https://github.com/kagoromo/zmk-config/blob/master/config/base.keymap
 / {
         keymap {
