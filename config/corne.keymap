@@ -34,6 +34,18 @@
             key-positions = <37 38>;
             bindings = <&lt U_MED_LAYER ESC>;
         };
+        combo_hmr_esc {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <ESC>;
+        };
+        combo_hmr_capsword {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&caps_word>;
+        };
         combo_delete {
             layers = <U_BAS_LAYER>;
             timeout-ms = <50>;
@@ -153,19 +165,19 @@
                 default_layer {
                   label = "Base";
                         bindings = <
-//    ┌───────┬────────────┬────────────┬─────────────┬─────────────────────┬───────────────────────┐                                               ┌──────────────────────┬─────────────────────┬─────────────┬────────────┬───────────────────┬───────┐
-//    │ &none │   &kp Q    │   &kp W    │    &kp E    │        &kp R        │         &kp T         │                                               │        &kp Y         │        &kp U        │    &kp I    │   &kp O    │ &lt U_MOU_LAYER P │ &none │
-//    ├───────┼────────────┼────────────┼─────────────┼─────────────────────┼───────────────────────┤                                               ├──────────────────────┼─────────────────────┼─────────────┼────────────┼───────────────────┼───────┤
-//    │ &none │ &hm LGUI A │ &hm LALT S │ &hm LCTRL D │     &hm LSHFT F     │         &kp G         │                                               │        &kp H         │     &hm LSHFT J     │ &hm LCTRL K │ &hm LALT L │   &hm LGUI SQT    │ &none │
-//    ├───────┼────────────┼────────────┼─────────────┼─────────────────────┼───────────────────────┤                                               ├──────────────────────┼─────────────────────┼─────────────┼────────────┼───────────────────┼───────┤
-//    │ &none │   &kp Z    │   &kp X    │    &kp C    │        &kp V        │         &kp B         │                                               │        &kp N         │        &kp M        │  &kp COMMA  │  &kp DOT   │     &kp FSLH      │ &none │
-//    └───────┴────────────┴────────────┴─────────────┼─────────────────────┼───────────────────────┼─────────────────────┐   ┌─────────────────────┼──────────────────────┼─────────────────────┼─────────────┴────────────┴───────────────────┴───────┘
-//                                                    │ &lt U_MED_LAYER ESC │ &lt U_NAV_LAYER SPACE │ &lt U_MOU_LAYER TAB │   │ &lt U_SYM_LAYER RET │ &lt U_NUM_LAYER BSPC │ &lt U_FUN_LAYER DEL │                                                       
-//                                                    └─────────────────────┴───────────────────────┴─────────────────────┘   └─────────────────────┴──────────────────────┴─────────────────────┘                                                       
-  &none   &kp Q        &kp W        &kp E         &kp R                 &kp T                                                                   &kp Y                  &kp U                 &kp I         &kp O        &lt U_MOU_LAYER P   &none
-  &none   &hm LGUI A   &hm LALT S   &hm LCTRL D   &hm LSHFT F           &kp G                                                                   &kp H                  &hm LSHFT J           &hm LCTRL K   &hm LALT L   &hm LGUI SQT        &none
-  &none   &kp Z        &kp X        &kp C         &kp V                 &kp B                                                                   &kp N                  &kp M                 &kp COMMA     &kp DOT      &kp FSLH            &none
-                                                  &lt U_MED_LAYER ESC   &lt U_NAV_LAYER SPACE   &lt U_MOU_LAYER TAB       &lt U_SYM_LAYER RET   &lt U_NUM_LAYER BSPC   &lt U_FUN_LAYER DEL                                                       
+//    ┌───────┬────────────┬────────────┬─────────────┬─────────────────────┬───────────────────────┐                                               ┌──────────────────────┬─────────────────────┬─────────────┬────────────┬──────────────┬───────┐
+//    │ &none │   &kp Q    │   &kp W    │    &kp E    │        &kp R        │         &kp T         │                                               │        &kp Y         │        &kp U        │    &kp I    │   &kp O    │    &kp P     │ &none │
+//    ├───────┼────────────┼────────────┼─────────────┼─────────────────────┼───────────────────────┤                                               ├──────────────────────┼─────────────────────┼─────────────┼────────────┼──────────────┼───────┤
+//    │ &none │ &hm LGUI A │ &hm LALT S │ &hm LCTRL D │     &hm LSHFT F     │         &kp G         │                                               │        &kp H         │     &hm LSHFT J     │ &hm LCTRL K │ &hm LALT L │ &hm LGUI SQT │ &none │
+//    ├───────┼────────────┼────────────┼─────────────┼─────────────────────┼───────────────────────┤                                               ├──────────────────────┼─────────────────────┼─────────────┼────────────┼──────────────┼───────┤
+//    │ &none │   &kp Z    │   &kp X    │    &kp C    │        &kp V        │         &kp B         │                                               │        &kp N         │        &kp M        │  &kp COMMA  │  &kp DOT   │   &kp FSLH   │ &none │
+//    └───────┴────────────┴────────────┴─────────────┼─────────────────────┼───────────────────────┼─────────────────────┐   ┌─────────────────────┼──────────────────────┼─────────────────────┼─────────────┴────────────┴──────────────┴───────┘
+//                                                    │ &lt U_MED_LAYER ESC │ &lt U_NAV_LAYER SPACE │ &lt U_MOU_LAYER TAB │   │ &lt U_SYM_LAYER RET │ &lt U_NUM_LAYER BSPC │ &lt U_FUN_LAYER DEL │                                                  
+//                                                    └─────────────────────┴───────────────────────┴─────────────────────┘   └─────────────────────┴──────────────────────┴─────────────────────┘                                                  
+  &none   &kp Q        &kp W        &kp E         &kp R                 &kp T                                                                   &kp Y                  &kp U                 &kp I         &kp O        &kp P          &none
+  &none   &hm LGUI A   &hm LALT S   &hm LCTRL D   &hm LSHFT F           &kp G                                                                   &kp H                  &hm LSHFT J           &hm LCTRL K   &hm LALT L   &hm LGUI SQT   &none
+  &none   &kp Z        &kp X        &kp C         &kp V                 &kp B                                                                   &kp N                  &kp M                 &kp COMMA     &kp DOT      &kp FSLH       &none
+                                                  &lt U_MED_LAYER ESC   &lt U_NAV_LAYER SPACE   &lt U_MOU_LAYER TAB       &lt U_SYM_LAYER RET   &lt U_NUM_LAYER BSPC   &lt U_FUN_LAYER DEL                                                  
                         >;
                 };
 
@@ -210,19 +222,19 @@
                 fun_layer {
                   label = "Function";
                         bindings = <
-//    ┌───────┬─────────┬────────┬────────┬───────────┬───────────┐                     ┌───────┬───────────┬───────────┬──────────┬──────────┬───────┐
-//    │ &none │ &kp F12 │ &kp F7 │ &kp F8 │  &kp F9   │  &kp N1   │                     │ &none │   &none   │   &none   │  &none   │  &none   │ &none │
-//    ├───────┼─────────┼────────┼────────┼───────────┼───────────┤                     ├───────┼───────────┼───────────┼──────────┼──────────┼───────┤
-//    │ &none │ &kp F11 │ &kp F4 │ &kp F5 │  &kp F6   │  &kp N1   │                     │ &none │ &kp LSHFT │ &kp LCTRL │ &kp RALT │ &kp LGUI │ &none │
-//    ├───────┼─────────┼────────┼────────┼───────────┼───────────┤                     ├───────┼───────────┼───────────┼──────────┼──────────┼───────┤
-//    │ &none │ &kp F10 │ &kp F1 │ &kp F2 │  &kp F3   │  &kp N1   │                     │ &none │   &none   │   &none   │  &none   │  &none   │ &none │
-//    └───────┴─────────┴────────┴────────┼───────────┼───────────┼─────────┐   ┌───────┼───────┼───────────┼───────────┴──────────┴──────────┴───────┘
-//                                        │ &kp CARET │ &kp SPACE │ &kp TAB │   │ &none │ &none │  &kp RET  │                                          
-//                                        └───────────┴───────────┴─────────┘   └───────┴───────┴───────────┘                                          
-  &none   &kp F12   &kp F7   &kp F8   &kp F9      &kp N1                            &none   &none       &none       &none      &none      &none
-  &none   &kp F11   &kp F4   &kp F5   &kp F6      &kp N1                            &none   &kp LSHFT   &kp LCTRL   &kp RALT   &kp LGUI   &none
-  &none   &kp F10   &kp F1   &kp F2   &kp F3      &kp N1                            &none   &none       &none       &none      &none      &none
-                                      &kp CARET   &kp SPACE   &kp TAB       &none   &none   &kp RET                                            
+//    ┌───────┬─────────┬────────┬────────┬──────────┬─────────────────┐                     ┌───────┬───────────┬───────────┬──────────┬──────────┬───────┐
+//    │ &none │ &kp F12 │ &kp F7 │ &kp F8 │  &kp F9  │ &kp printscreen │                     │ &none │   &none   │   &none   │  &none   │  &none   │ &none │
+//    ├───────┼─────────┼────────┼────────┼──────────┼─────────────────┤                     ├───────┼───────────┼───────────┼──────────┼──────────┼───────┤
+//    │ &none │ &kp F11 │ &kp F4 │ &kp F5 │  &kp F6  │     &kp N1      │                     │ &none │ &kp LSHFT │ &kp LCTRL │ &kp RALT │ &kp LGUI │ &none │
+//    ├───────┼─────────┼────────┼────────┼──────────┼─────────────────┤                     ├───────┼───────────┼───────────┼──────────┼──────────┼───────┤
+//    │ &none │ &kp F10 │ &kp F1 │ &kp F2 │  &kp F3  │     &kp N1      │                     │ &none │   &none   │   &none   │  &none   │  &none   │ &none │
+//    └───────┴─────────┴────────┴────────┼──────────┼─────────────────┼─────────┐   ┌───────┼───────┼───────────┼───────────┴──────────┴──────────┴───────┘
+//                                        │ &kp menu │    &kp SPACE    │ &kp TAB │   │ &none │ &none │  &kp RET  │                                          
+//                                        └──────────┴─────────────────┴─────────┘   └───────┴───────┴───────────┘                                          
+  &none   &kp F12   &kp F7   &kp F8   &kp F9     &kp printscreen                         &none   &none       &none       &none      &none      &none
+  &none   &kp F11   &kp F4   &kp F5   &kp F6     &kp N1                                  &none   &kp LSHFT   &kp LCTRL   &kp RALT   &kp LGUI   &none
+  &none   &kp F10   &kp F1   &kp F2   &kp F3     &kp N1                                  &none   &none       &none       &none      &none      &none
+                                      &kp menu   &kp SPACE         &kp TAB       &none   &none   &kp RET                                            
                         >;
                 };
 
