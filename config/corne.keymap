@@ -38,7 +38,7 @@
             layers = <U_BAS_LAYER>;
             timeout-ms = <50>;
             key-positions = <19 20>;
-            bindings = <ESC>;
+            bindings = <&kp ESC>;
         };
         combo_hmr_capsword {
             layers = <U_BAS_LAYER>;
@@ -142,8 +142,8 @@
     };
 };
 
-// # define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500
-// # define ZMK_MOUSE_DEFAULT_SCRL_VAL 20
+# define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500
+# define ZMK_MOUSE_DEFAULT_SCRL_VAL 20
 
 &mmv {
   acceleration-exponent = <1>;
