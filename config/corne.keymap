@@ -142,8 +142,8 @@
     };
 };
 
-// # define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500
-// # define ZMK_MOUSE_DEFAULT_SCRL_VAL 20
+# define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500
+# define ZMK_MOUSE_DEFAULT_SCRL_VAL 20
 
 &mmv {
   acceleration-exponent = <1>;
@@ -231,10 +231,10 @@
 //    └───────┴─────────┴────────┴────────┼──────────┼─────────────────┼─────────┐   ┌───────┼───────┼───────────┼───────────┴──────────┴──────────┴───────┘
 //                                        │ &kp menu │    &kp SPACE    │ &kp TAB │   │ &none │ &none │  &kp RET  │                                          
 //                                        └──────────┴─────────────────┴─────────┘   └───────┴───────┴───────────┘                                          
-  &none   &kp F12   &kp F7   &kp F8   &kp F9     &kp printscreen                         &none   &none       &none       &none      &none      &none
+  &none   &kp F12   &kp F7   &kp F8   &kp F9     &kp PSCRN                         &none   &none       &none       &none      &none      &none
   &none   &kp F11   &kp F4   &kp F5   &kp F6     &kp N1                                  &none   &kp LSHFT   &kp LCTRL   &kp RALT   &kp LGUI   &none
   &none   &kp F10   &kp F1   &kp F2   &kp F3     &kp N1                                  &none   &none       &none       &none      &none      &none
-                                      &kp menu   &kp SPACE         &kp TAB       &none   &none   &kp RET                                            
+                                      &kp K_MENU   &kp SPACE         &kp TAB       &none   &none   &kp RET                                            
                         >;
                 };
 
