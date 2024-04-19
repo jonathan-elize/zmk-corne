@@ -40,11 +40,11 @@
             key-positions = <19 20>;
             bindings = <&kp ESC>;
         };
-        combo_hmr_capsword {
+        combo_hmr_capslock {
             layers = <U_BAS_LAYER>;
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&caps_word>;
+            bindings = <&kp CAPSLOCK>;
         };
         combo_delete {
             layers = <U_BAS_LAYER>;
