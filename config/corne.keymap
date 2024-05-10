@@ -145,11 +145,11 @@
 // # define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500
 // # define ZMK_MOUSE_DEFAULT_SCRL_VAL 20
 
-&mmv {
-  acceleration-exponent = <1>;
-  time-to-max-speed-ms = <300>;
-  delay-ms = <0>;
-};
+// &mmv {
+//   acceleration-exponent = <1>;
+//   time-to-max-speed-ms = <300>;
+//   delay-ms = <0>;
+// };
 
 &msc {
   acceleration-exponent = <0>;
@@ -270,7 +270,8 @@
 //                                              │   &none   │ &none │ &kp RET │   │ &mkp RCLK │   &mkp LCLK    │   &mkp MCLK    │                                                 
 //                                              └───────────┴───────┴─────────┘   └───────────┴────────────────┴────────────────┘                                                 
   &none   &none      &none      &none       &none       &none                             &none            &none            &none          &none             &none   &none
-  &none   &kp LGUI   &kp RALT   &kp LCTRL   &kp LSHFT   &none                             &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &none   &none
+  &none   &kp LGUI   &kp RALT   &kp LCTRL   &kp LSHFT   &none                             &kp LEFT     &kp DOWN        &kp UP      &kp RIGHT   &caps_word_lock   &none
+  // &none   &kp LGUI   &kp RALT   &kp LCTRL   &kp LSHFT   &none                             &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &none   &none
   &none   &none      &none      &none       &none       &none                             &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT   &none   &none
                                             &none       &none   &kp RET       &mkp RCLK   &mkp LCLK        &mkp MCLK                                                      
                         >;
