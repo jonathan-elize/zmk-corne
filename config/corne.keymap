@@ -26,48 +26,6 @@
 #define U_MED_LAYER 6
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            layers = <U_BAS_LAYER>;
-            timeout-ms = <50>;
-            key-positions = <37 38>;
-            bindings = <&lt U_MED_LAYER ESC>;
-        };
-        combo_hmr_esc {
-            layers = <U_BAS_LAYER>;
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            bindings = <&kp ESC>;
-        };
-        combo_hmr_capslock {
-            layers = <U_BAS_LAYER>;
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp CAPSLOCK>;
-        };
-        combo_delete {
-            layers = <U_BAS_LAYER>;
-            timeout-ms = <50>;
-            key-positions = <39 40>;
-            bindings = <&lt U_FUN_LAYER DEL>;
-        };
-        combo_mclck {
-            layers = <U_MOU_LAYER>;
-            timeout-ms = <50>;
-            key-positions = <39 40>;
-            bindings = <&mkp MCLK>;
-        };
-        combo_stop {
-            layers = <U_MED_LAYER>;
-            timeout-ms = <50>;
-            key-positions = <39 40>;
-            bindings = <&kp C_MUTE>;
-        };
-    };
-};
-
-/ {
     behaviors {
         bt_tog_0: bt_tog_0 {
             compatible = "zmk,behavior-mod-morph";
@@ -129,6 +87,18 @@
             bindings = <&caps_word>, <&kp CAPSLOCK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        undo_redo: undo_redo {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K_UNDO>, <&kp K_REDO>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        copy_cut: copy_cut {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K_COPY>, <&kp K_CUT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         // https://www.reddit.com/r/olkb/comments/zdzwoh/how_to_do_modtap_in_zmk_except_for_one_thing/
         hm: homerow-mods {
             compatible = "zmk,behavior-hold-tap";
@@ -138,6 +108,66 @@
             flavor = "tap-preferred"; // ONLY activate hold after tapping-term-ms has passed, else always a tap
             quick-tap-ms = <125>; // if a tap was triggered on a hold-tap this many seconds before, then the tap is always gonna be triggered in the next tap-hold key
             bindings = <&kp>, <&kp>; 
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_undo_redo {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&undo_redo>;
+        };
+        combo_esc {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <37 38>;
+            bindings = <&lt U_MED_LAYER ESC>;
+        };
+        combo_hmr_esc {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp ESC>;
+        };
+        combo_hmr_copy_cut {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&copy_cut>;
+        };
+        combo_hmr_capslock {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp CAPSLOCK>;
+        };
+        combo_hmr_paste {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp ESC>;
+        };
+        combo_delete {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&lt U_FUN_LAYER DEL>;
+        };
+        combo_mclck {
+            layers = <U_MOU_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&mkp MCLK>;
+        };
+        combo_stop {
+            layers = <U_MED_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&kp C_MUTE>;
         };
     };
 };
