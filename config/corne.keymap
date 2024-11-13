@@ -132,6 +132,12 @@
             key-positions = <19 20>;
             bindings = <&kp ESC>;
         };
+        combo_hmr_repeat {
+            layers = <U_BAS_LAYER>;
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&key_repeat>;
+        };
         combo_hmr_copy_cut {
             layers = <U_BAS_LAYER>;
             timeout-ms = <50>;
