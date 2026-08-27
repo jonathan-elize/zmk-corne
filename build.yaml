@@ -18,9 +18,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: corne_left nice_view_adapter nice_view_gem
     artifact-name: corne_left
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: corne_right nice_view_adapter nice_view_gem
     artifact-name: corne_right
