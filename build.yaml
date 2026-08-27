@@ -20,5 +20,7 @@
 include:
   - board: nice_nano@2.0.0//zmk
     shield: corne_left nice_view_adapter nice_epaper
+    artifact-name: corne_left
   - board: nice_nano@2.0.0//zmk
     shield: corne_right nice_view_adapter nice_epaper
+    artifact-name: corne_right
