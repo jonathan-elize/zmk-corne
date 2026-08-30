@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+# https://v0-3-branch.zmk.dev/docs/development/local-toolchain/setup/native?operating-systems=mac&python-environment=venv
 # python3 -m venv ~/.venvs/zmk
 # source ~/.venvs/zmk/bin/activate
 # python -m pip install --upgrade pip
